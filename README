@@ -1,0 +1,43 @@
+# README
+
+## Spis Treści
+1. [Wstęp](#wstęp)
+2. [Instalacja](#instalacja)
+3. [Użycie](#użycie)
+4. [Zależności](#zależności)
+5. [Członkowie zespołu](#członkowie-zespołu)
+
+## Wstęp
+Aplikacja to kompleksowa platforma zdrowia i fitness zbudowana przy użyciu Node.js i Express. Umożliwia użytkownikom rejestrację, logowanie, zarządzanie profilem, obliczanie BMI i PPM, śledzenie spożycia wody, resetowanie hasła oraz usuwanie konta. Backend wykorzystuje MongoDB do przechowywania danych i Nodemailer do funkcji e-mailowych. Cały projekt uruchamiany jest za pomocą Dockera i docker-compose, co zapewnia łatwość instalacji i konfiguracji.
+## Instalacja
+### Wymagane oprogramowanie
+- Docker i Docker Compose (wersja 3.8 lub nowsza)
+
+### Kroki instalacji
+1. **Skopiuj repozytorium na swoje urządzenie:**
+    ```bash
+    git clone <adres-repozytorium>
+    cd <nazwa-folderu-repozytorium>
+    ```
+2. **Uruchom aplikację przy pomocy Docker Compose:**
+    ```bash
+    docker-compose up --build
+    ```
+   **Uwaga**: Komenda `docker-compose up --build` uruchomi wszystkie kontenery (aplikacja + MongoDB) i skonfiguruje połączenia między nimi.
+
+## Użycie
+Po pomyślnym uruchomieniu aplikacji za pomocą Docker Compose, aplikacja będzie dostępna w przeglądarce pod adresem: http://localhost:3000
+
+## Zależności
+Lista głównych zależności projektu, które są automatycznie instalowane w kontenerze:
+- **express**: framework do budowania aplikacji webowych
+- **mongoose**: ODM dla MongoDB
+- **nodemailer**: do obsługi wysyłania e-maili
+- **express-session**: do zarządzania sesjami użytkowników
+- **uuid**: do generowania unikalnych identyfikatorów
+- **ejs**: silnik szablonów do generowania HTML
+
+## Członkowie zespołu
+  - Daryna Pasiura, Nr indeksu: 44066
+  - Kamil Banasiewicz-Banaszewski, Nr indeksu: 42876
+  - Piotr Owczarzak, Nr indeksu: 42891
